@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="observablehq-1722cc96"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@muhammad-usman17/corona-cases-in-world-by-countries.js?v=3";
+const inspect = Inspector.into("#observablehq-1722cc96");
+(new Runtime).module(define, name => (name === "svg") && inspect());
+</script>
+
+</body>
+
+</html>
